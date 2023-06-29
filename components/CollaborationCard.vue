@@ -2,7 +2,7 @@
     <a :href="href" target="_blank">
         <div class="card max-w-md border-2 border-primary overflow-hidden mt-9">
             <img
-                class="w-full h-[233px] object-cover"
+                class="w-full aspect-video object-cover"
                 :src="img"
                 :alt="title"
             />
@@ -47,8 +47,8 @@ export default {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
-            })
+            });
         },
     },
-}
+};
 </script>

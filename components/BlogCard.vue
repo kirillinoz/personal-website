@@ -1,7 +1,7 @@
 <template>
     <nuxt-link :to="path">
         <div class="card max-w-md border-2 border-primary overflow-hidden mt-9">
-            <img class="w-full h-[233px]" :src="img" :alt="title" />
+            <img class="w-full aspect-video" :src="img" :alt="title" />
             <div class="py-6 px-6">
                 <h4 class="font-black">{{ title }}</h4>
                 <p class="mt-3">

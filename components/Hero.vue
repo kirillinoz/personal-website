@@ -24,12 +24,12 @@
                         >writing</span
                     >.
                     <img
-                        class="absolute w-24 -top-2 left-28 z-0"
+                        class="absolute w-24 -top-2 left-40 lg:left-28 z-0"
                         src="/icons/brush.svg"
                         alt="Brush"
                     />
                     <img
-                        class="absolute w-24 -top-2 right-28 z-0"
+                        class="absolute w-24 -top-2 right-14 lg:right-28 z-0"
                         src="/icons/brush.svg"
                         alt="Brush"
                     />
