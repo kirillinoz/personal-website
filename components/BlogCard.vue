@@ -43,7 +43,7 @@ export default {
             required: true,
         },
         readtime: {
-            type: String,
+            type: Number,
             required: true,
         },
         path: {
@@ -57,8 +57,8 @@ export default {
                 year: 'numeric',
                 month: 'long',
                 day: 'numeric',
-            })
+            });
         },
     },
-}
+};
 </script>

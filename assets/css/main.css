@@ -8,15 +8,15 @@
     }
 
     h1 {
-        @apply uppercase text-4xl font-light leading-relaxed;
+        @apply uppercase text-4xl font-light leading-relaxed text-center lg:text-left;
     }
 
     h2 {
-        @apply uppercase text-xl text-gray-500;
+        @apply uppercase text-xl text-gray-500 text-center lg:text-left;
     }
 
     h3 {
-        @apply uppercase text-xl;
+        @apply uppercase text-xl w-full text-center lg:text-left;
     }
 
     h4 {
@@ -25,8 +25,12 @@
 }
 
 @layer components {
+    .anchor {
+        @apply absolute top-0;
+    }
+
     .container {
-        @apply min-w-full border-y-2 border-primary;
+        @apply relative min-w-full border-y-2 border-primary;
     }
 
     .content {
@@ -51,5 +55,9 @@
 
     .unavailable {
         @apply bg-gray-400 cursor-not-allowed;
+    }
+
+    .menu-item {
+        @apply uppercase hover:bg-card px-3 border-l-2 h-[4rem] border-primary;
     }
 }

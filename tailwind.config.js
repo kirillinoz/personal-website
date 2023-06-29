@@ -9,6 +9,9 @@ module.exports = {
         './app.vue',
     ],
     theme: {
+        screens: {
+            lg: '945px',
+        },
         extend: {
             colors: {
                 primary: '#d2d2d2',
@@ -18,7 +21,10 @@ module.exports = {
             fontFamily: {
                 montserrat: ['Montserrat', 'sans-serif'],
             },
+            boxShadow: {
+                '3xl': '0 35px 60px -15px rgba(0, 0, 0, 0.9)',
+            },
         },
     },
     plugins: [],
-}
+};

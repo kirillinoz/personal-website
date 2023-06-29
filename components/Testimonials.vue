@@ -1,8 +1,9 @@
 <template>
     <div class="container">
+        <div class="anchor" id="testimonials"></div>
         <div class="content">
             <h3>Testimonials</h3>
-            <div class="flex justify-between mt-16">
+            <div class="flex justify-center lg:justify-between mt-16">
                 <div class="card relative px-6 pt-12 pb-6 max-w-md">
                     <p
                         class="absolute -top-10 text-9xl text-gray-400 font-black"

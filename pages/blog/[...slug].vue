@@ -1,6 +1,7 @@
 <template>
-    <main class="container">
-        <div class="content nuxt-content">
+    <main class="container border-0">
+        <Menu :short="true" />
+        <div class="content nuxt-content mt-[4rem]">
             <ContentDoc v-slot="{ doc }">
                 <img
                     class="thumbnail border-2 border-primary rounded-lg mt-0"
@@ -20,18 +21,19 @@
                 <ContentRenderer :value="doc" />
             </ContentDoc>
         </div>
+        <Footer />
     </main>
 </template>
 
 <script setup lang="ts">
 const formatDate = (date: string) => {
-    const d = new Date(date)
+    const d = new Date(date);
     return d.toLocaleDateString('en-US', {
         year: 'numeric',
         month: 'long',
         day: 'numeric',
-    })
-}
+    });
+};
 </script>
 
 <style>
@@ -60,6 +62,7 @@ const formatDate = (date: string) => {
     font-size: 2rem;
     margin-top: 3rem;
     margin-bottom: 2rem;
+    color: inherit;
 }
 
 .nuxt-content h3 {

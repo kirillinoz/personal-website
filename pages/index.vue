@@ -1,10 +1,12 @@
 <template>
     <main>
+        <Menu :scroll="scroll" />
         <Hero />
         <Offer />
         <Testimonials />
-        <Blog />
-        <Collaborations />
+        <Blog :scroll="scroll" />
+        <Collaborations :scroll="scroll" />
+        <Footer />
     </main>
 </template>
 
@@ -18,5 +20,12 @@ useHead({
             content: 'Home page',
         },
     ],
-})
+});
+
+function scroll(id: string) {
+    // @ts-ignore
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth',
+    });
+}
 </script>

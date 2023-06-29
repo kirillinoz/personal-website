@@ -1,12 +1,15 @@
 <template>
-    <div class="container">
-        <div class="content flex justify-between items-center">
+    <div class="container pt-[4rem] border-t-0">
+        <div class="anchor" id="hero"></div>
+        <div
+            class="content flex flex-col lg:flex-row justify-center lg:justify-between items-center"
+        >
             <img
                 class="h-56 w-56 rounded-full"
                 src="/images/profile.png"
                 alt="Profile picture"
             />
-            <div>
+            <div class="mt-3 lg:mt-0">
                 <h1>
                     I help enterpreneurs <br />
                     <span class="highlight font-black">get more clients</span>
