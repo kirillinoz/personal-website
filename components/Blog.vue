@@ -64,7 +64,7 @@ const props = defineProps({
 const maxLimit = await queryContent('blog').find();
 const limit = ref(2);
 
-const { data, refresh } = await useAsyncData('homepage', () => {
+const { data, refresh } = await useAsyncData('articles', () => {
     return queryContent('/blog').limit(limit.value).sort({ date: -1 }).find();
 });
 

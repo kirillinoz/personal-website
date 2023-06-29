@@ -1,5 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
+    ssr: false,
+    content: {
+        highlight: 'monokai',
+        experimental: {
+            clientDb: true,
+        },
+    },
     modules: [
         '@nuxt/content',
         [
@@ -19,9 +26,6 @@ export default defineNuxtConfig({
             tailwindcss: {},
             autoprefixer: {},
         },
-    },
-    content: {
-        highlight: 'monokai',
     },
     app: {
         head: {
