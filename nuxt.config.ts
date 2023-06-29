@@ -1,11 +1,10 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-    ssr: false,
+    generate: {
+        routes: ['/blog'], // one of routes getting 404
+    },
     content: {
         highlight: 'monokai',
-        experimental: {
-            clientDb: true,
-        },
     },
     modules: [
         '@nuxt/content',
