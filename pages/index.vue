@@ -12,7 +12,7 @@
 
 <script setup lang="ts">
 useHead({
-    title: 'Home',
+    title: 'Kirill Inoz • Web Developer & Technical Writer',
     meta: [
         {
             hid: 'description',
