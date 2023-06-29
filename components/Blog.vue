@@ -3,22 +3,22 @@
         <div class="anchor" id="blog"></div>
         <div class="content">
             <h3>Blog</h3>
-            <ContentList :query="query" v-slot="{ list }">
-                <div
-                    class="flex flex-wrap flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start mt-3"
-                >
-                    <div v-for="article in list" :key="article._path">
-                        <BlogCard
-                            :img="article.img"
-                            :title="article.title"
-                            :description="article.description"
-                            :date="article.date"
-                            :readtime="article.readtime"
-                            :path="article._path"
-                        />
-                    </div>
+
+            <div
+                class="flex flex-wrap flex-col lg:flex-row justify-center lg:justify-between items-center lg:items-start mt-3"
+            >
+                <div v-for="article in data" :key="article._path">
+                    <BlogCard
+                        :img="article.img"
+                        :title="article.title"
+                        :description="article.description"
+                        :date="article.date"
+                        :readtime="article.readtime"
+                        :path="article._path"
+                    />
                 </div>
-            </ContentList>
+            </div>
+
             <div class="flex justify-center lg:justify-end mt-9">
                 <div class="overflow-hidden rounded-lg w-fit">
                     <button
@@ -54,8 +54,6 @@
 </template>
 
 <script setup lang="ts">
-import type { QueryBuilderParams } from '@nuxt/content/dist/runtime/types';
-
 const props = defineProps({
     scroll: {
         type: Function,
@@ -64,18 +62,19 @@ const props = defineProps({
 });
 
 const maxLimit = await queryContent('blog').find();
-const limit = useState<number>('limit', () => 2);
+const limit = ref(2);
 
-const query = useState<QueryBuilderParams>('query', () => ({
-    path: '/blog',
-    limit: limit.value,
-    sort: [{ date: -1 }],
-}));
+const { data, refresh } = await useAsyncData('homepage', () => {
+    return queryContent('/blog').limit(limit.value).sort({ date: -1 }).find();
+});
+
+watch([limit], () => {
+    refresh();
+});
 
 async function incrementLimit() {
     if (limit.value >= maxLimit.length) return;
     limit.value += 2;
-    updateLimit();
 }
 
 function decrementLimit() {
@@ -83,12 +82,6 @@ function decrementLimit() {
     props.scroll('blog');
     setTimeout(() => {
         limit.value = 2;
-        updateLimit();
     }, limit.value * 80);
-}
-
-function updateLimit() {
-    query.value.limit = limit.value;
-    console.log(limit.value);
 }
 </script>
