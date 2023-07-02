@@ -147,4 +147,13 @@ const formatDate = (date: string) => {
     line-height: 1.77778rem;
     margin-bottom: 2rem;
 }
+
+@media screen and (max-width: 945px) {
+    .nuxt-content h1,
+    .nuxt-content h2,
+    .nuxt-content h3,
+    .nuxt-content h4 {
+        text-align: left;
+    }
+}
 </style>

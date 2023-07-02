@@ -55,32 +55,7 @@
 </template>
 
 <script setup lang="ts">
-const collaborations = [
-    {
-        img: 'https://nexten.imgix.net/8be2db4e-fa23-4616-811a-37477926c7ef.jpg?auto=format&fit=crop&w=1920&h=630&crop=edges&s=09c8cbba174ddbb6bc8407627db97697',
-        title: 'Improve your art of Googling',
-        description:
-            "As a developer, you often come across a problem that is outside your knowledge, and that's fine. As a developer",
-        href: 'https://nexten.io/en/blog/maitriser-google-les-principaux-raccourcis',
-        date: '2023-03-22',
-    },
-    {
-        img: 'https://nexten.imgix.net/46d3399b-5c2a-4203-ab10-dd25b7b7e115.png?auto=format&fit=crop&w=1920&h=630&crop=edges&s=32ab4ffb174f2cd0f7096207405047f8',
-        title: 'Tutorial hell and how to get out',
-        description:
-            'Every beginner who wants to get into development must start somewhere. Although every beginner has',
-        href: 'https://nexten.io/en/blog/dev-echapper-a-l-enfer-des-tutos',
-        date: '2022-12-07',
-    },
-    {
-        img: 'https://25146371.fs1.hubspotusercontent-eu1.net/hub/25146371/hubfs/Purple%20monkey-2-3.png?width=600&name=Purple%20monkey-2-3.png',
-        title: 'Do you need a portfolio website?',
-        description:
-            'Developer portfolios are very popular. Just casually scrolling through Twitter, I often come across tweets',
-        href: 'https://community.nexten.io/dev-ai-je-vraiment-besoin-dun-portfolio',
-        date: '2022-10-20',
-    },
-];
+import collaborations from '~~/assets/collaborations';
 
 const props = defineProps({
     scroll: {
