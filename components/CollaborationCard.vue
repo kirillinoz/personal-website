@@ -3,8 +3,9 @@
         <div class="card max-w-md border-2 border-primary overflow-hidden mt-9">
             <img
                 class="w-full aspect-video object-cover"
-                :src="img"
+                :src="isPlaceholder ? '/images/placeholder.png' : img"
                 :alt="title"
+                @error="failedToLoad"
             />
             <div class="py-6 px-6">
                 <h4 class="font-black">{{ title }}</h4>
@@ -19,6 +20,11 @@
 
 <script>
 export default {
+    data() {
+        return {
+            isPlaceholder: false,
+        };
+    },
     props: {
         img: {
             type: String,
@@ -48,6 +54,11 @@ export default {
                 month: 'long',
                 day: 'numeric',
             });
+        },
+    },
+    methods: {
+        failedToLoad() {
+            this.isPlaceholder = true;
         },
     },
 };
