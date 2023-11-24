@@ -8,7 +8,7 @@ This website is targeted to find new clients for projects in web development or 
 * [Installation](#installation)
 * [Usage](#usage)
 * [Folder Structure](#folder-structure)
-* [Technologies Used](#technologies-used)
+* [Packages Used](#packages-used)
 
 ## Installation
 1) `git clone https://github.com/kirillinoz/my-website.git`
