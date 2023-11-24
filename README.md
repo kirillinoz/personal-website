@@ -1,5 +1,5 @@
 # Personal Website
-[Website](https://ikirill.com) | [Code](https://github.com/kirillinoz/my-website)
+[Website](https://ikirill.com) | [Code](https://github.com/kirillinoz/personal-website)
 
 ## Overview
 This website is targeted to find new clients for projects in web development or technical writing. It includes testimonials from past clients. On the website you can find blog posts written by me for my personal blog. Likewise under collaborations you will find articles I have written for clients. The website is completely responsive. It utilizes same colors as my social media accounts to create a distinct personal brand.
