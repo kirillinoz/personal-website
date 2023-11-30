@@ -1,5 +1,13 @@
 export default [
     {
+        img: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1696933542201/3c3ee97a-66b7-4e26-9184-d680e2db94a5.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+        title: 'Create Midjourney Alternative with Supabase and Hugging Face',
+        description:
+            'There is no doubt that Midjourney is currently the leading tool for AI image generation',
+        href: 'https://blog.ikirill.com/create-midjourney-alternative-with-supabase-and-hugging-face-in-minutes',
+        date: '2023-10-10',
+    },
+    {
         img: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1682436848319/d0c34e2a-9bfb-40f9-8ff4-a36d1d0791b8.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         title: 'Build an AI Tool with Supabase Edge Functions',
         description:
