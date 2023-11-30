@@ -1,42 +1,41 @@
-# Nuxt 3 Minimal Starter
+# Personal Website
+[Website](https://ikirill.com) | [Code](https://github.com/kirillinoz/personal-website)
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Overview
+This website is targeted to find new clients for projects in web development or technical writing. It includes testimonials from past clients. On the website, you can find blog posts written by me for my blog. Likewise, under collaborations you will find articles I have written for clients. The website is responsive. It utilizes the same colors as my social media accounts to create a distinct personal brand.
 
-## Setup
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Folder Structure](#folder-structure)
+* [Packages Used](#packages-used)
 
-Make sure to install the dependencies:
+## Installation
+1) `git clone https://github.com/kirillinoz/my-website.git`
+2) `cd my-website`
+3) `npm install`
 
+## Usage
+1) `npm run start`
+2) Open your browser and go to http://localhost:3000
+
+## Folder Structure
 ```bash
-# yarn
-yarn install
-
-# npm
-npm install
-
-# pnpm
-pnpm install
+- /assets
+  - /css
+- /components
+- /content
+  - /blog
+- /pages
+- /public
 ```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
+## Packages Used
 ```bash
-npm run dev
+nuxt-app@
+├── @nuxt/content@2.5.2
+├── @nuxtjs/google-fonts@3.0.0
+├── autoprefixer@10.4.14
+├── nuxt@3.3.2
+├── postcss@8.4.21
+└── tailwindcss@3.3.0
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
