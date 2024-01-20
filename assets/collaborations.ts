@@ -1,10 +1,18 @@
 export default [
     {
+        img: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1703268130788/3522315c-1f5e-44cd-ab35-c64bd4b23674.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
+        title: 'Multi-User Note App with Supabase Realtime',
+        description:
+            'This blog post is all about creating a Multi-User Note App with Next.js and Supabase',
+        href: 'https://blog.kirillinoz.com/multi-user-note-app-with-supabase-realtime',
+        date: '2023-12-22',
+    },
+    {
         img: 'https://cdn.hashnode.com/res/hashnode/image/upload/v1696933542201/3c3ee97a-66b7-4e26-9184-d680e2db94a5.png?w=1600&h=840&fit=crop&crop=entropy&auto=compress,format&format=webp',
         title: 'Create Midjourney Alternative with Supabase and Hugging Face',
         description:
             'There is no doubt that Midjourney is currently the leading tool for AI image generation',
-        href: 'https://blog.ikirill.com/create-midjourney-alternative-with-supabase-and-hugging-face-in-minutes',
+        href: 'https://blog.kirillinoz.com/create-midjourney-alternative-with-supabase-and-hugging-face-in-minutes',
         date: '2023-10-10',
     },
     {
@@ -12,7 +20,7 @@ export default [
         title: 'Build an AI Tool with Supabase Edge Functions',
         description:
             'Artificial intelligence (AI) became very trendy in the last half a year. With the introduction',
-        href: 'https://blog.ikirill.com/build-an-ai-tool-with-supabase-edge-functions',
+        href: 'https://blog.kirillinoz.com/build-an-ai-tool-with-supabase-edge-functions',
         date: '2023-04-25',
     },
     {
@@ -44,7 +52,7 @@ export default [
         title: 'How Supabase Powers Mockury',
         description:
             "If you follow me on Twitter, you have probably heard about the project I'm working on called Mockury.",
-        href: 'https://blog.ikirill.com/how-supabase-powers-mockury',
+        href: 'https://blog.kirillinoz.com/how-supabase-powers-mockury',
         date: '2022-12-06',
     },
     {
